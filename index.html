@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaswani Exports — Textiles & Food Products Since 1992</title>
+<meta name="description" content="Leading exporters of Textiles and Food products from India since 1992. FIEO & APEDA registered. Brands: Mc-Kim, Tex'italia, Krown, Cruncy Bytes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink:       #0f0e0c;
+  --ink-2:     #2a2520;
+  --ink-3:     #5a5148;
+  --ink-4:     #8c8278;
+  --gold:      #9d7b3f;
+  --gold-2:    #c9a96e;
+  --gold-pale: #f5ede0;
+  --gold-rim:  rgba(180,145,80,.18);
+  --bg:        #0f0e0c;
+  --bg-2:      #161410;
+  --bg-3:      #1e1b16;
+  --bg-4:      #272318;
+  --light:     #faf7f2;
+  --light-2:   #f0ebe2;
+  --white:     #ffffff;
+  --green-wa:  #25D366;
+  --r:         10px;
+  --rl:        18px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--light);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+/* ─── UTILITY ─────────────────────────────────── */
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+.container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+
+.tag {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-2); margin-bottom: 14px;
+}
+.tag::before { content: '— '; }
+.tag::after  { content: ' —'; }
+
+h2.headline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700; line-height: 1.1;
+  color: var(--white); letter-spacing: -0.5px;
+}
+h2.headline em { color: var(--gold-2); font-style: italic; }
+
+.body-text {
+  font-size: 15px; font-weight: 300;
+  color: rgba(250,247,242,.6);
+  line-height: 1.85; max-width: 560px;
+}
+
+.divider {
+  width: 48px; height: 1px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin: 20px 0;
+}
+
+/* ─── BUTTONS ─────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 14px 28px; border-radius: 4px;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  border: none; cursor: pointer;
+}
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 100%);
+  color: #0f0e0c;
+  box-shadow: 0 4px 20px rgba(157,123,63,.35);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(157,123,63,.5);
+  filter: brightness(1.08);
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(201,169,110,.35);
+  color: var(--gold-2);
+}
+.btn-outline:hover {
+  background: rgba(201,169,110,.08);
+  border-color: var(--gold-2);
+}
+.btn-wa {
+  background: var(--green-wa);
+  color: white;
+  box-shadow: 0 4px 20px rgba(37,211,102,.3);
+}
+.btn-wa:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37,211,102,.45);
+  filter: brightness(1.06);
+}
+
+/* ─── TOPBAR ──────────────────────────────────── */
+.topbar {
+  background: var(--bg-2);
+  border-bottom: 1px solid rgba(201,169,110,.12);
+  padding: 9px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12px; color: rgba(250,247,242,.5);
+  letter-spacing: .3px;
+}
+.topbar-left { display: flex; gap: 24px; }
+.topbar-right { display: flex; align-items: center; gap: 20px; }
+.topbar a { color: rgba(250,247,242,.5); transition: color .2s; }
+.topbar a:hover { color: var(--gold-2); }
+
+.wa-top {
+  display: flex; align-items: center; gap: 7px;
+  background: rgba(37,211,102,.12);
+  border: 1px solid rgba(37,211,102,.25);
+  color: #4ade80;
+  padding: 5px 14px; border-radius: 100px;
+  font-size: 12px; font-weight: 500;
+  transition: all .25s;
+}
+.wa-top:hover { background: rgba(37,211,102,.2); color: #4ade80; }
+.wa-top svg { flex-shrink: 0; }
+
+/* ─── NAVBAR ──────────────────────────────────── */
+nav {
+  position: sticky; top: 0; z-index: 900;
+  background: rgba(15,14,12,.9);
+  backdrop-filter: blur(20px) saturate(1.3);
+  border-bottom: 1px solid var(--gold-rim);
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 14px;
+}
+.nav-logo-mark {
+  width: 40px; height: 40px; border-radius: 8px;
+  background: linear-gradient(135deg,var(--gold),var(--gold-2));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cinzel', serif; font-size: 14px; font-weight: 600;
+  color: var(--ink);
+}
+.nav-logo-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 17px; font-weight: 700; color: var(--white);
+  letter-spacing: .3px; line-height: 1.15;
+}
+.nav-logo-sub {
+  font-size: 10px; color: var(--gold-2);
+  letter-spacing: 2px; text-transform: uppercase;
+}
+.nav-links {
+  display: flex; align-items: center; gap: 4px;
+  list-style: none;
+}
+.nav-links > li { position: relative; }
+.nav-links > li > a {
+  display: flex; align-items: center; gap: 5px;
+  padding: 8px 16px; border-radius: 6px;
+  font-size: 13px; font-weight: 500;
+  color: rgba(250,247,242,.7);
+  transition: all .2s; letter-spacing: .3px;
+}
+.nav-links > li > a:hover,
+.nav-links > li.has-drop:hover > a {
+  color: var(--gold-2);
+  background: rgba(201,169,110,.08);
+}
+.chevron {
+  width: 12px; height: 12px; opacity: .5;
+  transition: transform .2s;
+}
+.has-drop:hover .chevron { transform: rotate(180deg); }
+
+/* dropdown */
+.dropdown {
+  display: none;
+  position: absolute; top: calc(100% + 8px); left: 0;
+  min-width: 520px;
+  background: var(--bg-2);
+  border: 1px solid var(--gold-rim);
+  border-radius: var(--r);
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+  padding: 20px;
+  z-index: 1000;
+}
+.has-drop:hover .dropdown { display: block; }
+.dropdown-title {
+  font-family: 'Cinzel', serif; font-size: 9px;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--gold-2); padding: 0 8px 12px;
+  border-bottom: 1px solid var(--gold-rim);
+  margin-bottom: 14px;
+}
+.dropdown-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+}
+.dropdown-grid.cols3 { grid-template-columns: repeat(3, 1fr); }
+.drop-item {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 8px; padding: 12px 8px; border-radius: 8px;
+  text-align: center; cursor: pointer;
+  transition: background .2s;
+  border: 1px solid transparent;
+}
+.drop-item:hover {
+  background: rgba(201,169,110,.08);
+  border-color: var(--gold-rim);
+}
+.drop-item img {
+  width: 64px; height: 64px; object-fit: cover;
+  border-radius: 6px; border: 1px solid var(--gold-rim);
+}
+.drop-item span {
+  font-size: 11px; color: rgba(250,247,242,.75);
+  font-weight: 500; line-height: 1.3;
+}
+
+/* brands dropdown */
+.brands-drop {
+  min-width: 380px;
+}
+.brands-drop-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+}
+.brand-drop-item {
+  display: flex; align-items: center; justify-content: center;
+  padding: 12px; border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all .2s; cursor: pointer;
+}
+.brand-drop-item:hover {
+  background: rgba(201,169,110,.08);
+  border-color: var(--gold-rim);
+}
+.brand-drop-item img {
+  max-height: 40px; max-width: 100px;
+  object-fit: contain;
+  filter: brightness(.7) contrast(1.1);
+  transition: filter .2s;
+}
+.brand-drop-item:hover img { filter: brightness(1); }
+
+/* downloads dropdown */
+.dl-drop { min-width: 240px; }
+.dl-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px; border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all .2s; cursor: pointer; color: rgba(250,247,242,.75);
+  font-size: 13px; font-weight: 500;
+}
+.dl-item:hover { background: rgba(201,169,110,.08); border-color: var(--gold-rim); color: var(--gold-2); }
+.dl-icon {
+  width: 32px; height: 32px; border-radius: 6px;
+  background: rgba(201,169,110,.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0;
+}
+
+.nav-cta-group { display: flex; gap: 10px; align-items: center; }
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 6px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--light); transition: all .3s;
+}
+
+/* ─── HERO ────────────────────────────────────── */
+#hero {
+  position: relative; min-height: 96vh;
+  display: grid; place-items: center;
+  overflow: hidden;
+}
+.hero-slides {
+  position: absolute; inset: 0; z-index: 0;
+}
+.hero-slide {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.2s ease;
+}
+.hero-slide.active { opacity: 1; }
+.hero-slide img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(.35);
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(15,14,12,.85) 0%,
+    rgba(15,14,12,.4) 55%,
+    rgba(15,14,12,.15) 100%
+  );
+}
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 48px;
+  max-width: 1240px; width: 100%;
+  margin: 0 auto;
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 22px;
+}
+.hero-eyebrow-line {
+  width: 40px; height: 1px; background: var(--gold-2);
+}
+.hero-eyebrow span {
+  font-family: 'Cinzel', serif;
+  font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--gold-2);
+}
+.hero-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(42px, 6vw, 78px);
+  font-weight: 700; line-height: 1.06;
+  color: var(--white); letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+.hero-title em { font-style: italic; color: var(--gold-2); }
+.hero-sub {
+  font-size: 16px; color: rgba(250,247,242,.6);
+  font-weight: 300; max-width: 520px;
+  line-height: 1.75; margin-bottom: 38px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 52px; }
+.hero-stats {
+  display: flex; gap: 40px; flex-wrap: wrap;
+  padding-top: 40px;
+  border-top: 1px solid var(--gold-rim);
+}
+.hero-stat-num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px; font-weight: 700; color: var(--white);
+  line-height: 1;
+}
+.hero-stat-num sup { font-size: 16px; color: var(--gold-2); }
+.hero-stat-label {
+  font-size: 11px; color: rgba(250,247,242,.45);
+  letter-spacing: 1px; text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* scroll indicator */
+.scroll-hint {
+  position: absolute; bottom: 36px; left: 50%;
+  transform: translateX(-50%); z-index: 3;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: rgba(250,247,242,.35); font-size: 10px; letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: bounce 2.5s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(6px); }
+}
+.scroll-hint svg { opacity: .4; }
+
+/* slide dots */
+.slide-dots {
+  position: absolute; bottom: 36px; right: 48px;
+  display: flex; gap: 8px; z-index: 4;
+}
+.dot {
+  width: 24px; height: 2px;
+  background: rgba(201,169,110,.3); border-radius: 2px;
+  cursor: pointer; transition: all .3s;
+}
+.dot.active { background: var(--gold-2); width: 36px; }
+
+/* ─── STRIP ───────────────────────────────────── */
+.strip {
+  background: var(--gold);
+  padding: 14px 48px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 48px; flex-wrap: wrap;
+  overflow: hidden;
+}
+.strip-item {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--ink);
+  font-weight: 600; white-space: nowrap;
+}
+.strip-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--ink); opacity: .35; }
+
+/* ─── ABOUT ───────────────────────────────────── */
+#about {
+  padding: 120px 48px;
+  background: var(--bg);
+}
+.about-grid {
+  max-width: 1240px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+}
+.about-img-stack { position: relative; padding-bottom: 40px; }
+.about-img-main {
+  width: 100%; aspect-ratio: 3/4;
+  object-fit: cover; border-radius: var(--rl);
+  border: 1px solid var(--gold-rim);
+  filter: saturate(1.05) contrast(1.02);
+}
+.about-img-inset {
+  position: absolute; bottom: 0; right: -24px;
+  width: 55%; aspect-ratio: 4/3;
+  object-fit: cover; border-radius: var(--r);
+  border: 2px solid var(--bg);
+  box-shadow: 0 16px 48px rgba(0,0,0,.6);
+}
+.since-badge {
+  position: absolute; top: 24px; left: 24px;
+  background: var(--gold);
+  width: 88px; height: 88px; border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+}
+.since-badge .year {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px; font-weight: 700; color: var(--ink);
+  line-height: 1;
+}
+.since-badge .since {
+  font-family: 'Cinzel', serif;
+  font-size: 8px; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--ink);
+  opacity: .7; margin-top: 2px;
+}
+.about-content .body-text { margin-bottom: 18px; }
+.about-list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 14px;
+  margin: 28px 0 36px;
+}
+.about-list li {
+  display: flex; align-items: flex-start; gap: 14px;
+  font-size: 14px; color: rgba(250,247,242,.7);
+  font-weight: 300;
+}
+.about-list li::before {
+  content: '';
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--gold-2); margin-top: 8px; flex-shrink: 0;
+}
+.cert-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+.cert {
+  padding: 6px 14px; border-radius: 100px;
+  border: 1px solid rgba(201,169,110,.3);
+  font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--gold-2);
+}
+
+/* ─── PRODUCTS ────────────────────────────────── */
+#products { padding: 100px 48px; background: var(--bg-2); }
+.products-inner { max-width: 1240px; margin: 0 auto; }
+.section-head {
+  display: flex; align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 44px; flex-wrap: wrap; gap: 16px;
+}
+.section-head-left .body-text { margin-top: 12px; max-width: 440px; }
+
+.prod-tabs {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.ptab {
+  background: none; border: 1px solid rgba(201,169,110,.2);
+  color: rgba(250,247,242,.5);
+  padding: 9px 20px; border-radius: 100px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 500; letter-spacing: .5px;
+  cursor: pointer; transition: all .25s;
+}
+.ptab:hover { border-color: var(--gold-2); color: var(--gold-2); }
+.ptab.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink); font-weight: 600;
+}
+
+.panel { display: none; }
+.panel.active { display: block; animation: panelIn .35s ease; }
+@keyframes panelIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+.prod-card {
+  background: var(--bg-3);
+  border: 1px solid rgba(201,169,110,.12);
+  border-radius: var(--rl); overflow: hidden;
+  transition: all .35s cubic-bezier(.4,0,.2,1);
+  cursor: pointer; position: relative;
+}
+.prod-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201,169,110,.35);
+  box-shadow: 0 16px 48px rgba(0,0,0,.4);
+}
+.prod-img-wrap { overflow: hidden; position: relative; }
+.prod-img-wrap::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(15,14,12,.7) 0%, transparent 50%);
+}
+.prod-img {
+  width: 100%; aspect-ratio: 1 / 1.05;
+  object-fit: cover;
+  transition: transform .6s cubic-bezier(.4,0,.2,1);
+  background: var(--bg-4);
+}
+.prod-card:hover .prod-img { transform: scale(1.06); }
+.prod-cat-badge {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  z-index: 2; padding: 10px 14px 8px;
+}
+.prod-cat-badge span {
+  font-family: 'Cinzel', serif; font-size: 8px;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold-2);
+}
+.prod-info { padding: 14px 16px 18px; }
+.prod-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px; font-weight: 700; color: var(--white);
+  margin-bottom: 4px; line-height: 1.3;
+}
+.prod-link {
+  font-size: 11px; color: var(--gold-2);
+  font-weight: 500; letter-spacing: .5px;
+  display: inline-flex; align-items: center; gap: 5px;
+  transition: gap .2s;
+}
+.prod-card:hover .prod-link { gap: 9px; }
+
+/* ─── BRANDS ──────────────────────────────────── */
+#brands { padding: 90px 48px; background: var(--bg); }
+.brands-inner { max-width: 1240px; margin: 0 auto; }
+.brands-grid {
+  display: flex; gap: 0;
+  margin-top: 40px;
+  border: 1px solid var(--gold-rim);
+  border-radius: var(--rl);
+  overflow: hidden;
+}
+.brand-tile {
+  flex: 1; padding: 36px 24px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-2);
+  border-right: 1px solid var(--gold-rim);
+  transition: background .25s, transform .25s;
+  position: relative;
+  cursor: pointer;
+}
+.brand-tile:last-child { border-right: none; }
+.brand-tile:hover { background: var(--bg-3); }
+.brand-tile img {
+  max-height: 52px; max-width: 120px;
+  object-fit: contain;
+  filter: brightness(.65) saturate(.7);
+  transition: all .3s;
+}
+.brand-tile:hover img { filter: brightness(1) saturate(1); }
+.brand-tile-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(157,123,63,.06), transparent);
+  opacity: 0; transition: opacity .25s;
+  border-radius: inherit;
+}
+.brand-tile:hover .brand-tile-overlay { opacity: 1; }
+
+/* ─── PROCESS ─────────────────────────────────── */
+#process { padding: 100px 48px; background: var(--bg-2); }
+.process-inner { max-width: 1240px; margin: 0 auto; }
+.process-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; margin-top: 48px;
+  background: var(--gold-rim);
+  border: 1px solid var(--gold-rim);
+  border-radius: var(--rl); overflow: hidden;
+}
+.process-step {
+  background: var(--bg-3); padding: 36px 28px;
+  position: relative; transition: background .3s;
+}
+.process-step:hover { background: var(--bg-4); }
+.step-num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 52px; font-weight: 700;
+  color: rgba(201,169,110,.1); line-height: 1;
+  margin-bottom: 16px;
+}
+.step-img {
+  width: 52px; height: 52px; object-fit: contain;
+  filter: invert(1) brightness(.6);
+  margin-bottom: 16px;
+}
+.step-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px; font-weight: 700;
+  color: var(--white); line-height: 1.35;
+  margin-bottom: 0;
+}
+.step-connector {
+  position: absolute; top: 50%; right: -1px;
+  transform: translateY(-50%);
+  width: 14px; height: 14px;
+  border-radius: 50%; background: var(--gold);
+  border: 3px solid var(--bg-2); z-index: 2;
+}
+.process-step:last-child .step-connector { display: none; }
+
+/* ─── CATALOGUE ───────────────────────────────── */
+#downloads { padding: 100px 48px; background: var(--bg); }
+.downloads-inner { max-width: 1240px; margin: 0 auto; }
+.dl-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 24px; margin-top: 48px;
+}
+.dl-card {
+  background: var(--bg-3);
+  border: 1px solid var(--gold-rim);
+  border-radius: var(--rl); padding: 36px;
+  display: flex; gap: 24px; align-items: center;
+  transition: all .3s; cursor: pointer;
+}
+.dl-card:hover {
+  border-color: rgba(201,169,110,.4);
+  background: var(--bg-4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+}
+.dl-card-icon {
+  width: 60px; height: 60px; flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid var(--gold-rim);
+  background: rgba(201,169,110,.08);
+  display: flex; align-items: center; justify-content: center;
+}
+.dl-card-icon svg { width: 28px; height: 28px; }
+.dl-card-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px; font-weight: 700; color: var(--white);
+  margin-bottom: 4px;
+}
+.dl-card-desc { font-size: 13px; color: rgba(250,247,242,.45); font-weight: 300; }
+.dl-card-cta {
+  margin-top: 14px; display: inline-flex;
+  align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--gold-2); transition: gap .2s;
+}
+.dl-card:hover .dl-card-cta { gap: 13px; }
+
+/* ─── CONTACT ─────────────────────────────────── */
+#contact { padding: 100px 48px; background: var(--bg-2); }
+.contact-inner { max-width: 1240px; margin: 0 auto; }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1.4fr;
+  gap: 48px; margin-top: 52px;
+}
+.contact-details { display: flex; flex-direction: column; gap: 16px; }
+.contact-card-dark {
+  background: var(--bg-3); border: 1px solid var(--gold-rim);
+  border-radius: var(--r); padding: 20px 22px;
+  transition: border-color .3s;
+}
+.contact-card-dark:hover { border-color: rgba(201,169,110,.35); }
+.cc-label {
+  font-family: 'Cinzel', serif; font-size: 9px;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold-2); margin-bottom: 7px;
+}
+.cc-value {
+  font-size: 14px; color: rgba(250,247,242,.8);
+  font-weight: 300; line-height: 1.6;
+}
+.cc-value a { color: rgba(250,247,242,.8); transition: color .2s; }
+.cc-value a:hover { color: var(--gold-2); }
+.contact-wa-block {
+  margin-top: 4px; padding: 22px;
+  background: rgba(37,211,102,.06);
+  border: 1px solid rgba(37,211,102,.2);
+  border-radius: var(--r);
+}
+.contact-wa-block p {
+  font-size: 13px; color: rgba(250,247,242,.5);
+  margin-bottom: 14px; font-weight: 300;
+}
+.contact-right { display: flex; flex-direction: column; gap: 24px; }
+.map-wrap {
+  border-radius: var(--rl); overflow: hidden;
+  border: 1px solid var(--gold-rim);
+}
+.map-wrap iframe { display: block; width: 100%; height: 290px; }
+.form-box {
+  background: var(--bg-3); border: 1px solid var(--gold-rim);
+  border-radius: var(--rl); padding: 32px;
+}
+.form-box h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px; color: var(--white);
+  margin-bottom: 22px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.fg { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.fg label {
+  font-family: 'Cinzel', serif; font-size: 9px;
+  letter-spacing: 1.8px; text-transform: uppercase;
+  color: rgba(250,247,242,.4);
+}
+.fg input, .fg select, .fg textarea {
+  background: var(--bg-4);
+  border: 1px solid rgba(201,169,110,.2);
+  border-radius: 6px; padding: 11px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; color: var(--white);
+  outline: none; transition: border-color .25s, box-shadow .25s;
+}
+.fg input::placeholder, .fg textarea::placeholder { color: rgba(250,247,242,.2); }
+.fg input:focus, .fg select:focus, .fg textarea:focus {
+  border-color: var(--gold-2);
+  box-shadow: 0 0 0 3px rgba(201,169,110,.1);
+}
+.fg select option { background: var(--bg-3); }
+.fg textarea { resize: vertical; min-height: 88px; }
+
+/* ─── FOOTER ──────────────────────────────────── */
+footer {
+  background: var(--bg-2);
+  border-top: 1px solid var(--gold-rim);
+  padding: 72px 48px 32px;
+}
+.footer-grid {
+  max-width: 1240px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px; margin-bottom: 56px;
+}
+.footer-brand-logo {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 18px;
+}
+.footer-brand p {
+  font-size: 13px; color: rgba(250,247,242,.4);
+  font-weight: 300; line-height: 1.8;
+  margin-bottom: 20px; max-width: 280px;
+}
+.footer-soc { display: flex; gap: 10px; }
+.soc-btn {
+  width: 34px; height: 34px; border-radius: 6px;
+  border: 1px solid rgba(201,169,110,.2);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(250,247,242,.4); transition: all .2s;
+  font-size: 13px;
+}
+.soc-btn:hover { border-color: var(--gold-2); color: var(--gold-2); background: rgba(201,169,110,.08); }
+.footer-col h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px; font-weight: 700;
+  color: var(--white); margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gold-rim);
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.footer-col a {
+  font-size: 13px; color: rgba(250,247,242,.45);
+  font-weight: 300; transition: color .2s;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.footer-col a::before { content: '›'; color: var(--gold-2); font-size: 14px; }
+.footer-col a:hover { color: var(--gold-2); }
+.footer-contact-item {
+  display: flex; gap: 10px; align-items: flex-start;
+  margin-bottom: 12px;
+}
+.fci-icon { color: var(--gold-2); font-size: 13px; margin-top: 2px; flex-shrink: 0; }
+.fci-text { font-size: 13px; color: rgba(250,247,242,.45); font-weight: 300; line-height: 1.55; }
+.fci-text a { color: rgba(250,247,242,.45); transition: color .2s; }
+.fci-text a:hover { color: var(--gold-2); }
+.footer-bottom {
+  max-width: 1240px; margin: 0 auto;
+  border-top: 1px solid var(--gold-rim);
+  padding-top: 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-bottom p { font-size: 12px; color: rgba(250,247,242,.25); }
+.footer-bottom a { color: rgba(250,247,242,.25); transition: color .2s; }
+.footer-bottom a:hover { color: var(--gold-2); }
+
+/* ─── FLOATING WA ─────────────────────────────── */
+.wa-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 800;
+  width: 54px; height: 54px; border-radius: 50%;
+  background: var(--green-wa);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 24px rgba(37,211,102,.4);
+  transition: all .3s; cursor: pointer;
+  text-decoration: none;
+}
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,.55); }
+.wa-float svg { width: 26px; height: 26px; fill: white; }
+.wa-pulse {
+  position: absolute; inset: -4px; border-radius: 50%;
+  border: 2px solid rgba(37,211,102,.4);
+  animation: pulsering 2s ease-out infinite;
+}
+@keyframes pulsering {
+  0%   { transform: scale(.9); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* ─── SCROLL-TO-TOP ───────────────────────────── */
+.totop {
+  position: fixed; bottom: 92px; right: 28px; z-index: 800;
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(201,169,110,.15);
+  border: 1px solid var(--gold-rim);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; opacity: 0; transform: translateY(10px);
+  transition: all .3s; color: var(--gold-2);
+}
+.totop.show { opacity: 1; transform: none; }
+.totop:hover { background: rgba(201,169,110,.25); }
+
+/* ─── REVEAL ──────────────────────────────────── */
+.r { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+.r.up { opacity: 1; transform: none; }
+.r.d1 { transition-delay: .1s; }
+.r.d2 { transition-delay: .2s; }
+.r.d3 { transition-delay: .3s; }
+.r.d4 { transition-delay: .4s; }
+
+/* ─── MOBILE ──────────────────────────────────── */
+.mob-menu-overlay {
+  display: none; position: fixed; inset: 0; z-index: 998;
+  background: var(--bg);
+  flex-direction: column;
+  padding: 90px 48px 48px;
+  gap: 0;
+}
+.mob-menu-overlay.open { display: flex; }
+.mob-link {
+  display: block; padding: 18px 0;
+  border-bottom: 1px solid var(--gold-rim);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 26px; color: rgba(250,247,242,.8);
+  transition: color .2s;
+}
+.mob-link:hover { color: var(--gold-2); }
+.mob-close {
+  position: absolute; top: 20px; right: 24px;
+  background: none; border: none; cursor: pointer;
+  font-size: 28px; color: rgba(250,247,242,.5);
+  transition: color .2s;
+}
+.mob-close:hover { color: var(--gold-2); }
+
+@media (max-width: 1000px) {
+  .nav-links, .nav-cta-group { display: none; }
+  .hamburger { display: flex; }
+  .topbar { display: none; }
+  .hero-content, .container, #about, #products,
+  #brands, #process, #downloads, #contact, footer { padding-left: 24px; padding-right: 24px; }
+  nav { padding: 0 24px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-img-stack { display: none; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .dl-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr 1fr; }
+  .brands-grid { flex-wrap: wrap; }
+  .brand-tile { flex: 0 0 33.33%; }
+  .form-row { grid-template-columns: 1fr; }
+  .strip { padding: 14px 24px; }
+}
+@media (max-width: 600px) {
+  .hero-stats { gap: 20px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .brands-grid { flex-wrap: wrap; }
+  .brand-tile { flex: 0 0 50%; }
+  .process-grid { grid-template-columns: 1fr; }
+  .mob-menu-overlay { padding: 90px 24px 48px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <span>sales@vaswaniexports.com</span>
+    <span>Tel: +91-11-41812231</span>
+    <span>Mon–Sat 9AM–7PM IST</span>
+  </div>
+  <div class="topbar-right">
+    <a href="https://api.whatsapp.com/send?phone=919899212231" target="_blank" class="wa-top">
+      <svg width="13" height="13" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.762.46 3.418 1.264 4.857L0 20l5.293-1.243A9.953 9.953 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0zm4.49 13.92c-.247.694-1.23 1.27-1.77 1.352-.48.072-1.086.102-1.752-.11a15.86 15.86 0 01-1.587-.587c-2.8-1.207-4.626-4.02-4.765-4.207-.14-.186-1.131-1.503-1.131-2.868s.715-2.036.97-2.312c.253-.276.554-.345.737-.345.184 0 .368.002.53.01.17.008.399-.065.625.477.23.556.78 1.91.848 2.05.068.138.114.3.023.484-.09.183-.137.298-.274.459-.137.16-.288.358-.412.481-.137.138-.28.288-.12.565.16.276.71 1.17 1.525 1.895.104.093 1.05.975 2.11 1.34.28.098.498.155.667.196.28.067.536.057.737-.035.248-.113.856-.888 1.085-1.19.228-.302.457-.252.77-.152.313.102 1.985.937 2.326 1.107.34.17.568.255.652.397.082.14.082.81-.165 1.503z"/></svg>
+      WhatsApp Us
+    </a>
+    <a href="tel:+919899212231">+91-9899212231</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-mark">VE</div>
+    <div>
+      <div class="nav-logo-name">Vaswani Exports</div>
+      <div class="nav-logo-sub">Est. 1992 · New Delhi</div>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+
+    <!-- Products dropdown -->
+    <li class="has-drop">
+      <a href="#products">
+        Products
+        <svg class="chevron" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown">
+        <div class="dropdown-title">Textiles</div>
+        <div class="dropdown-grid">
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MTo5OjYzNGI1M2E1MGNmMjRiMThmYWM4MzU1ZDhjZTlkNWQz" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1645182892-smfabric.png" alt="Fabric">
+            <span>Fabric</span>
+          </a>
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MToxMDphZDhkYWNiZmIyMTZmNDNiNWUyMDQ2NjQxYzA3ZTRiMg==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1645182940-smshawls.png" alt="Shawls">
+            <span>Shawls</span>
+          </a>
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MToxMzpjZGVlNzdmNmJhMjI0NGY3ZTIwY2QyMjg5MDZiMzdlNw==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1673853007-sm1645183655-smmenu_polyster.png" alt="Men's Scarf">
+            <span>Men's Scarf</span>
+          </a>
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MToxNDo2ZDRlYjUyNTU1NzA0MjVhZDI2MDFmMTJjMDM1MTJhNA==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1682492024-smprinted-linen-fabrics-small.jpg" alt="Sutings & Shirtings">
+            <span>Sutings &amp; Shirtings</span>
+          </a>
+        </div>
+        <div class="dropdown-title" style="margin-top:18px;">Food Stuff</div>
+        <div class="dropdown-grid">
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxNjoyMTA5ZDg2ZWFiZjFlMDFlZjM5ZGIyNGExYzNjYjQ3ZQ==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1655557941-smChoco-Swiss-200.jpg" alt="Cookies">
+            <span>Cookies</span>
+          </a>
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxNzphNDQxOTY1MzIwZDc2Njg0MTc1MDFmNjkzZTNlMTEwOQ==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1655448005-relish-cream.jpg" alt="Cream Biscuits">
+            <span>Cream Biscuits</span>
+          </a>
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxODoxMGM4ZjE0NjAxOTFkZWFlMTAzOTA0OTkzYzg1NWVkZg==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1655452961-Digestivel.jpg" alt="Digestive">
+            <span>Digestive</span>
+          </a>
+          <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoyMTo3M2I0MTMxNGEyNWZmZDQ4Nzk4MjllNWU4ZGE4ZTVmYQ==" class="drop-item">
+            <img src="https://www.vaswaniexports.com/menu-category/1655530387-smBourBon-Biscut.jpg" alt="Bourbon">
+            <span>Bourbon</span>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Brands dropdown -->
+    <li class="has-drop">
+      <a href="#brands">
+        Brands
+        <svg class="chevron" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown brands-drop">
+        <div class="dropdown-title">Our Brands</div>
+        <div class="brands-drop-grid">
+          <div class="brand-drop-item">
+            <img src="https://www.vaswaniexports.com/images/menubrand_2.png" alt="Mc-Kim">
+          </div>
+          <div class="brand-drop-item">
+            <img src="https://www.vaswaniexports.com/images/menubrand_1.png" alt="Tex'italia">
+          </div>
+          <div class="brand-drop-item">
+            <img src="https://www.vaswaniexports.com/images/krown.png" alt="Krown">
+          </div>
+          <div class="brand-drop-item">
+            <img src="https://www.vaswaniexports.com/images/cruncy-bytes.png" alt="Cruncy Bytes">
+          </div>
+          <div class="brand-drop-item">
+            <img src="https://www.vaswaniexports.com/images/cookies-&-more.png" alt="Cookies &amp; More">
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- Download dropdown -->
+    <li class="has-drop">
+      <a href="#downloads">
+        Download
+        <svg class="chevron" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown dl-drop">
+        <div class="dropdown-title">Catalogues</div>
+        <a href="https://www.vaswaniexports.com/pdf/mckim-catalog.pdf" target="_blank" class="dl-item">
+          <div class="dl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          MCKIM Catalog
+        </a>
+        <a href="https://www.vaswaniexports.com/pdf/krown-catalog.pdf" target="_blank" class="dl-item">
+          <div class="dl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          KROWN Catalog
+        </a>
+      </div>
+    </li>
+
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+
+  <div class="nav-cta-group">
+    <a href="https://api.whatsapp.com/send?phone=919899212231" target="_blank" class="btn btn-wa" style="padding:10px 18px;font-size:11px;">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.762.46 3.418 1.264 4.857L0 20l5.293-1.243A9.953 9.953 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0zm4.49 13.92c-.247.694-1.23 1.27-1.77 1.352-.48.072-1.086.102-1.752-.11a15.86 15.86 0 01-1.587-.587c-2.8-1.207-4.626-4.02-4.765-4.207-.14-.186-1.131-1.503-1.131-2.868s.715-2.036.97-2.312c.253-.276.554-.345.737-.345.184 0 .368.002.53.01.17.008.399-.065.625.477.23.556.78 1.91.848 2.05.068.138.114.3.023.484-.09.183-.137.298-.274.459-.137.16-.288.358-.412.481-.137.138-.28.288-.12.565.16.276.71 1.17 1.525 1.895.104.093 1.05.975 2.11 1.34.28.098.498.155.667.196.28.067.536.057.737-.035.248-.113.856-.888 1.085-1.19.228-.302.457-.252.77-.152.313.102 1.985.937 2.326 1.107.34.17.568.255.652.397.082.14.082.81-.165 1.503z"/></svg>
+      WhatsApp
+    </a>
+    <a href="https://www.vaswaniexports.com/contact-us.php#inquirenow" class="btn btn-outline" style="padding:10px 18px;font-size:11px;">Enquire Now</a>
+  </div>
+
+  <button class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu-overlay" id="mobMenu">
+  <button class="mob-close" id="mobClose">✕</button>
+  <a href="#hero" class="mob-link" onclick="closeMob()">Home</a>
+  <a href="#about" class="mob-link" onclick="closeMob()">About Us</a>
+  <a href="#products" class="mob-link" onclick="closeMob()">Products</a>
+  <a href="#brands" class="mob-link" onclick="closeMob()">Brands</a>
+  <a href="#downloads" class="mob-link" onclick="closeMob()">Download Catalogue</a>
+  <a href="#contact" class="mob-link" onclick="closeMob()">Contact Us</a>
+  <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+    <a href="https://api.whatsapp.com/send?phone=919899212231" target="_blank" class="btn btn-wa">WhatsApp Us</a>
+    <a href="https://www.vaswaniexports.com/contact-us.php#inquirenow" class="btn btn-outline">Enquire Now</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active">
+      <img src="https://www.vaswaniexports.com/images/slider2-next.webp" alt="Vaswani Exports Textiles">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-slide">
+      <img src="https://www.vaswaniexports.com/images/banner1-dark.webp" alt="Vaswani Exports Products">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-slide">
+      <img src="https://www.vaswaniexports.com/images/slider3-next.webp" alt="Vaswani Exports Export">
+      <div class="hero-overlay"></div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>FIEO &amp; APEDA Registered · New Delhi, India</span>
+    </div>
+    <h1 class="hero-title">
+      Premium <em>Textiles</em><br>&amp; Food Products<br>Since 1992
+    </h1>
+    <p class="hero-sub">
+      Leading exporters of Indian Textiles and Food Products worldwide. 
+      Manufacturer of Biscuits, Cookies, Wafers &amp; Rusks. 
+      Exporting bleach/dyed/printed fabrics, Shawls &amp; Scarfs globally.
+    </p>
+    <div class="hero-actions">
+      <a href="#products" class="btn btn-gold">Explore Products</a>
+      <a href="https://api.whatsapp.com/send?phone=919899212231" target="_blank" class="btn btn-wa">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.762.46 3.418 1.264 4.857L0 20l5.293-1.243A9.953 9.953 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0zm4.49 13.92c-.247.694-1.23 1.27-1.77 1.352-.48.072-1.086.102-1.752-.11a15.86 15.86 0 01-1.587-.587c-2.8-1.207-4.626-4.02-4.765-4.207-.14-.186-1.131-1.503-1.131-2.868s.715-2.036.97-2.312c.253-.276.554-.345.737-.345.184 0 .368.002.53.01.17.008.399-.065.625.477.23.556.78 1.91.848 2.05.068.138.114.3.023.484-.09.183-.137.298-.274.459-.137.16-.288.358-.412.481-.137.138-.28.288-.12.565.16.276.71 1.17 1.525 1.895.104.093 1.05.975 2.11 1.34.28.098.498.155.667.196.28.067.536.057.737-.035.248-.113.856-.888 1.085-1.19.228-.302.457-.252.77-.152.313.102 1.985.937 2.326 1.107.34.17.568.255.652.397.082.14.082.81-.165 1.503z"/></svg>
+        WhatsApp Now
+      </a>
+      <a href="#contact" class="btn btn-outline">Send Enquiry</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">30<sup>+</sup></div>
+        <div class="hero-stat-label">Years Exporting</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">50<sup>+</sup></div>
+        <div class="hero-stat-label">Countries Served</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">4.8<sup>★</sup></div>
+        <div class="hero-stat-label">Google Rating</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">5</div>
+        <div class="hero-stat-label">Premium Brands</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M4 10l5 5 5-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Scroll
+  </div>
+
+  <div class="slide-dots" id="slideDots">
+    <div class="dot active" onclick="goSlide(0)"></div>
+    <div class="dot" onclick="goSlide(1)"></div>
+    <div class="dot" onclick="goSlide(2)"></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item">Exporting Since 1992</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">FIEO Registered</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">APEDA Registered</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">Textiles &amp; Food Products</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">Gulf · Africa · Worldwide</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">Chandni Chowk, New Delhi</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-stack r">
+      <img
+        src="https://www.vaswaniexports.com/images/banner1-dark.webp"
+        alt="Vaswani Exports" class="about-img-main"
+        onerror="this.src='https://www.vaswaniexports.com/images/slider2-next.webp'"
+      >
+      <img
+        src="https://www.vaswaniexports.com/menu-category/1645182892-smfabric.png"
+        alt="Fabric Products" class="about-img-inset"
+        onerror="this.style.display='none'"
+      >
+      <div class="since-badge">
+        <div class="year">1992</div>
+        <div class="since">Est.</div>
+      </div>
+    </div>
+    <div>
+      <div class="tag r">About Us</div>
+      <h2 class="headline r">Welcome to<br>Vaswani <em>Exports</em></h2>
+      <div class="divider r"></div>
+      <p class="body-text r">
+        We are leading exporters of Textiles and Food products from India exporting since 1992. 
+        Our aim is to provide high-quality, affordable products to our customers around the world. 
+        We take great pride in our products and services and are committed to ensuring your satisfaction with every order.
+      </p>
+      <p class="body-text r d1" style="margin-top:12px;">
+        In Textiles we export bleach / dyed / printed fabrics in width 36 inches to 58 inches both in Cotton and Polyester, Shawls and Scarfs. We offer an extensive variety of fabrics.
+      </p>
+      <p class="body-text r d1" style="margin-top:12px;">
+        In Food products we manufacture &amp; export Biscuits, Cookies, Wafers and Rusks. We are exporting Glucose Biscuits, Cream Biscuits, Digestive Biscuits, Salted Biscuits, Crackers, Butter Cookies, Dry Fruit Cookies and Wafer cream Biscuits. We are also manufacturing for many well-known brands in Gulf and African countries.
+      </p>
+      <ul class="about-list r d2">
+        <li>Timely Delivery &amp; Worldwide Shipping</li>
+        <li>Good Billing Structure &amp; Fair Prices</li>
+        <li>Custom Labels &amp; Private Branding Available</li>
+        <li>Excellent network across all major ports of India</li>
+        <li>Domestic &amp; Overseas reputation since 1992</li>
+      </ul>
+      <div class="cert-row r d3">
+        <span class="cert">FIEO</span>
+        <span class="cert">APEDA</span>
+        <span class="cert">GST: 07ABPPV5141F1ZD</span>
+      </div>
+      <div style="margin-top:28px;" class="r d3">
+        <a href="https://www.vaswaniexports.com/about-us.php" class="btn btn-outline">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-inner">
+    <div class="section-head r">
+      <div class="section-head-left">
+        <div class="tag">Our Products</div>
+        <h2 class="headline">Textiles &amp; Food Stuff</h2>
+        <p class="body-text">Manufacturer &amp; Exporter of Indian Textiles &amp; Food Stuff (Biscuit)</p>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="prod-tabs r">
+      <button class="ptab active" onclick="showPanel(this,'p-textiles')">Textiles</button>
+      <button class="ptab" onclick="showPanel(this,'p-food')">Food Stuff (Biscuit)</button>
+    </div>
+
+    <!-- Textiles -->
+    <div class="panel active" id="p-textiles">
+      <div class="prod-grid">
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MTo5OjYzNGI1M2E1MGNmMjRiMThmYWM4MzU1ZDhjZTlkNWQz" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1645182892-smfabric.png" alt="Fabric" loading="lazy">
+            <div class="prod-cat-badge"><span>Textiles</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Fabric</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MToxMDphZDhkYWNiZmIyMTZmNDNiNWUyMDQ2NjQxYzA3ZTRiMg==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1645182940-smshawls.png" alt="Shawls" loading="lazy">
+            <div class="prod-cat-badge"><span>Textiles</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Shawls</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MToxMzpjZGVlNzdmNmJhMjI0NGY3ZTIwY2QyMjg5MDZiMzdlNw==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1673853007-sm1645183655-smmenu_polyster.png" alt="Men's Scarf" loading="lazy">
+            <div class="prod-cat-badge"><span>Textiles</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Men's Scarf</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=MToxNDo2ZDRlYjUyNTU1NzA0MjVhZDI2MDFmMTJjMDM1MTJhNA==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1682492024-smprinted-linen-fabrics-small.jpg" alt="Sutings & Shirtings Fabrics" loading="lazy">
+            <div class="prod-cat-badge"><span>Textiles</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Sutings &amp; Shirtings Fabrics</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Food -->
+    <div class="panel" id="p-food">
+      <p class="body-text" style="margin-bottom:28px;">Vaswani Exports is Manufacturer &amp; Exporter of Indian Food stuff (Biscuit).</p>
+      <div class="prod-grid">
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxNjoyMTA5ZDg2ZWFiZjFlMDFlZjM5ZGIyNGExYzNjYjQ3ZQ==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1655557941-smChoco-Swiss-200.jpg" alt="Cookies" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Cookies</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxNzphNDQxOTY1MzIwZDc2Njg0MTc1MDFmNjkzZTNlMTEwOQ==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1655448005-relish-cream.jpg" alt="Cream Biscuits" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Cream Biscuits</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxODoxMGM4ZjE0NjAxOTFkZWFlMTAzOTA0OTkzYzg1NWVkZg==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1655452961-Digestivel.jpg" alt="Digestive Biscuits" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Digestive Biscuits</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoyMTo3M2I0MTMxNGEyNWZmZDQ4Nzk4MjllNWU4ZGE4ZTVmYQ==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1655530387-smBourBon-Biscut.jpg" alt="Bourbon" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Bourbon</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoyMjo5ZGYwODdlODlmNzdlZDVkNzQ4ZjFkNDNmNDZiM2RiYw==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1655531435-Wafers-New-Chocolate200.jpg" alt="Wafers" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Wafers</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoyMzpkZjcxZGM2MzkzMTM2ZWVlYTYwNmI2MDY1MmJlNjgwOQ==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1655557074-enery-glucose-biscuits200.jpg" alt="Energy Glucose Biscuits" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Energy Glucose Biscuits</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+        <a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODozMDo1ZGNmOTQ1ZGRiMTdhMWY4NjE0YTVjYTdmYTA2MTRiYw==" class="prod-card">
+          <div class="prod-img-wrap">
+            <img class="prod-img" src="https://www.vaswaniexports.com/menu-category/1662622848-giftpackbox.jpg" alt="Gift Pack" loading="lazy">
+            <div class="prod-cat-badge"><span>Food Stuff</span></div>
+          </div>
+          <div class="prod-info">
+            <div class="prod-name">Gift Pack</div>
+            <div class="prod-link">View Products <span>→</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands">
+  <div class="brands-inner">
+    <div class="tag r">Our Brands</div>
+    <h2 class="headline r">Trusted Brand Portfolio</h2>
+    <div class="brands-grid r d1">
+      <div class="brand-tile">
+        <div class="brand-tile-overlay"></div>
+        <img src="https://www.vaswaniexports.com/images/brand-1.png" alt="Tex'italia"
+             onerror="this.src='https://www.vaswaniexports.com/images/menubrand_1.png'">
+      </div>
+      <div class="brand-tile">
+        <div class="brand-tile-overlay"></div>
+        <img src="https://www.vaswaniexports.com/images/Mckim.jpg" alt="Mc-Kim"
+             onerror="this.src='https://www.vaswaniexports.com/images/menubrand_2.png'">
+      </div>
+      <div class="brand-tile">
+        <div class="brand-tile-overlay"></div>
+        <img src="https://www.vaswaniexports.com/images/krown.jpg" alt="Krown"
+             onerror="this.src='https://www.vaswaniexports.com/images/krown.png'">
+      </div>
+      <div class="brand-tile">
+        <div class="brand-tile-overlay"></div>
+        <img src="https://www.vaswaniexports.com/images/crunchy-bytes.jpg" alt="Cruncy Bytes"
+             onerror="this.src='https://www.vaswaniexports.com/images/cruncy-bytes.png'">
+      </div>
+      <div class="brand-tile">
+        <div class="brand-tile-overlay"></div>
+        <img src="https://www.vaswaniexports.com/images/cookies-&-more.jpg" alt="Cookies &amp; More"
+             onerror="this.src='https://www.vaswaniexports.com/images/cookies-&-more.png'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-inner">
+    <div class="tag r">How We Work</div>
+    <h2 class="headline r">Our Process</h2>
+    <div class="process-grid r d1">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <img class="step-img" src="https://www.vaswaniexports.com/images/understanding.png" alt="Understanding"
+             onerror="this.style.display='none'">
+        <div class="step-title">Understanding requirements of the customer</div>
+        <div class="step-connector"></div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <img class="step-img" src="https://www.vaswaniexports.com/images/deal.png" alt="Deal"
+             onerror="this.style.display='none'">
+        <div class="step-title">Provide solution &amp; Confirm the Deal</div>
+        <div class="step-connector"></div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <img class="step-img" src="https://www.vaswaniexports.com/images/work-hard.png" alt="Work Hard"
+             onerror="this.style.display='none'">
+        <div class="step-title">Work Hard On Project</div>
+        <div class="step-connector"></div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <img class="step-img" src="https://www.vaswaniexports.com/images/delivered.png" alt="Delivered"
+             onerror="this.style.display='none'">
+        <div class="step-title">Re-check &amp; Delivered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOADS -->
+<section id="downloads">
+  <div class="downloads-inner">
+    <div class="tag r">Catalogues</div>
+    <h2 class="headline r">Download</h2>
+    <div class="dl-grid">
+      <a href="https://www.vaswaniexports.com/pdf/mckim-catalog.pdf" target="_blank" class="dl-card r">
+        <div class="dl-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-2)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/>
+          </svg>
+        </div>
+        <div>
+          <div class="dl-card-name">MCKIM Catalog</div>
+          <div class="dl-card-desc">Full product catalogue for the Mc-Kim brand range</div>
+          <div class="dl-card-cta">Download PDF <span>→</span></div>
+        </div>
+      </a>
+      <a href="https://www.vaswaniexports.com/pdf/krown-catalog.pdf" target="_blank" class="dl-card r d1">
+        <div class="dl-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-2)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/>
+          </svg>
+        </div>
+        <div>
+          <div class="dl-card-name">KROWN Catalog</div>
+          <div class="dl-card-desc">Full product catalogue for the Krown brand range</div>
+          <div class="dl-card-cta">Download PDF <span>→</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="tag r">Get In Touch</div>
+    <h2 class="headline r">Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-details">
+        <div class="contact-card-dark r">
+          <div class="cc-label">Address</div>
+          <div class="cc-value">4500/1, Dau Bazar, Fatehpuri,<br>Chandni Chowk Delhi 110006, India</div>
+        </div>
+        <div class="contact-card-dark r d1">
+          <div class="cc-label">Email</div>
+          <div class="cc-value">
+            <a href="mailto:sales@vaswaniexports.com">sales@vaswaniexports.com</a><br>
+            <a href="mailto:vaswaniexports@gmail.com">vaswaniexports@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card-dark r d1">
+          <div class="cc-label">Phone</div>
+          <div class="cc-value">
+            <a href="tel:+919899212231">MOB: +91-9899212231</a><br>
+            <a href="tel:+911141812231">TEL: +91-11-41812231</a>
+          </div>
+        </div>
+        <div class="contact-wa-block r d2">
+          <p>Fastest response — chat directly with us on WhatsApp for product enquiries, pricing, and orders.</p>
+          <a href="https://api.whatsapp.com/send?phone=919899212231" target="_blank" class="btn btn-wa">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.762.46 3.418 1.264 4.857L0 20l5.293-1.243A9.953 9.953 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0zm4.49 13.92c-.247.694-1.23 1.27-1.77 1.352-.48.072-1.086.102-1.752-.11a15.86 15.86 0 01-1.587-.587c-2.8-1.207-4.626-4.02-4.765-4.207-.14-.186-1.131-1.503-1.131-2.868s.715-2.036.97-2.312c.253-.276.554-.345.737-.345.184 0 .368.002.53.01.17.008.399-.065.625.477.23.556.78 1.91.848 2.05.068.138.114.3.023.484-.09.183-.137.298-.274.459-.137.16-.288.358-.412.481-.137.138-.28.288-.12.565.16.276.71 1.17 1.525 1.895.104.093 1.05.975 2.11 1.34.28.098.498.155.667.196.28.067.536.057.737-.035.248-.113.856-.888 1.085-1.19.228-.302.457-.252.77-.152.313.102 1.985.937 2.326 1.107.34.17.568.255.652.397.082.14.082.81-.165 1.503z"/></svg>
+            Chat on WhatsApp: +91-9899212231
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="map-wrap r">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.9908312100524!2d77.2211318!3d28.6599932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0ddf3f8f83%3A0x403a95ebc4a0749c!2sVaswani%20Exports!5e0!3m2!1sen!2sin!4v1779618443149!5m2!1sen!2sin"
+            width="600" height="290" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Vaswani Exports — Chandni Chowk, New Delhi">
+          </iframe>
+        </div>
+        <div class="form-box r d1">
+          <h3>Send a Query</h3>
+          <div class="form-row">
+            <div class="fg">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name">
+            </div>
+            <div class="fg">
+              <label>Email</label>
+              <input type="email" placeholder="email@company.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="fg">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" placeholder="+91 ...">
+            </div>
+            <div class="fg">
+              <label>Product Interest</label>
+              <select>
+                <option value="">Select...</option>
+                <option>Textiles / Fabric</option>
+                <option>Shawls &amp; Scarfs</option>
+                <option>Men's Scarf</option>
+                <option>Sutings &amp; Shirtings</option>
+                <option>Cookies</option>
+                <option>Cream Biscuits</option>
+                <option>Digestive Biscuits</option>
+                <option>Bourbon</option>
+                <option>Wafers</option>
+                <option>Energy Glucose Biscuits</option>
+                <option>Gift Pack</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Message</label>
+            <textarea placeholder="Your requirements, quantity, destination country..."></textarea>
+          </div>
+          <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="alert('Thank you! We will respond within 24 hours.\nYou can also reach us directly at sales@vaswaniexports.com')">
+            Submit Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        <div class="nav-logo-mark">VE</div>
+        <div>
+          <div class="nav-logo-name">Vaswani Exports</div>
+          <div class="nav-logo-sub">Est. 1992 · New Delhi</div>
+        </div>
+      </div>
+      <p>Manufacturer &amp; Exporter of Indian Textiles &amp; Food Stuff (Biscuit). Exporting worldwide since 1992. FIEO &amp; APEDA registered.</p>
+      <div class="footer-soc">
+        <a href="https://api.whatsapp.com/send?phone=919899212231" class="soc-btn" target="_blank" title="WhatsApp">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.762.46 3.418 1.264 4.857L0 20l5.293-1.243A9.953 9.953 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0z"/></svg>
+        </a>
+        <a href="mailto:sales@vaswaniexports.com" class="soc-btn" title="Email">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        </a>
+        <a href="tel:+919899212231" class="soc-btn" title="Call">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="https://www.vaswaniexports.com/about-us.php">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="https://www.vaswaniexports.com/contact-us.php">Contact Us</a></li>
+        <li><a href="https://www.vaswaniexports.com/contact-us.php#inquirenow">Inquire Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Products</h4>
+      <ul>
+        <li><a href="https://www.vaswaniexports.com/ProductList.php?Enc=MTo5OmQwNzM1NjAwNzc5YzZlMzg0MjYxZTg3YTY0NTI3YTg1">Textile Products</a></li>
+        <li><a href="https://www.vaswaniexports.com/ProductList.php?Enc=ODoxNjpkZGI2OWViMDJjZjg1MzIxZTNmMjQwNzllZDg4NTBiYg==">Food Stuff</a></li>
+        <li><a href="https://www.vaswaniexports.com/pdf/mckim-catalog.pdf" target="_blank">MCKIM Catalog</a></li>
+        <li><a href="https://www.vaswaniexports.com/pdf/krown-catalog.pdf" target="_blank">KROWN Catalog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <div class="footer-contact-item">
+        <span class="fci-icon">▸</span>
+        <div class="fci-text">4500/1, Dau Bazar, Fatehpuri,<br>Chandni Chowk Delhi 110006, India</div>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">▸</span>
+        <div class="fci-text">
+          <a href="mailto:sales@vaswaniexports.com">sales@vaswaniexports.com</a><br>
+          <a href="mailto:vaswaniexports@gmail.com">vaswaniexports@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">▸</span>
+        <div class="fci-text">
+          <a href="tel:+919899212231">MOB: +91-9899212231</a><br>
+          <a href="tel:+911141812231">TEL: +91-11-41812231</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2022 <a href="https://www.vaswaniexports.com">Vaswaniexports</a>. All Right Reserved.</p>
+    <p>Powered by <a href="https://hindsoft.com" target="_blank">Hindsoft</a></p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://api.whatsapp.com/send?phone=919899212231" target="_blank" class="wa-float" title="Chat on WhatsApp">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 20 20"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.762.46 3.418 1.264 4.857L0 20l5.293-1.243A9.953 9.953 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0zm4.49 13.92c-.247.694-1.23 1.27-1.77 1.352-.48.072-1.086.102-1.752-.11a15.86 15.86 0 01-1.587-.587c-2.8-1.207-4.626-4.02-4.765-4.207-.14-.186-1.131-1.503-1.131-2.868s.715-2.036.97-2.312c.253-.276.554-.345.737-.345.184 0 .368.002.53.01.17.008.399-.065.625.477.23.556.78 1.91.848 2.05.068.138.114.3.023.484-.09.183-.137.298-.274.459-.137.16-.288.358-.412.481-.137.138-.28.288-.12.565.16.276.71 1.17 1.525 1.895.104.093 1.05.975 2.11 1.34.28.098.498.155.667.196.28.067.536.057.737-.035.248-.113.856-.888 1.085-1.19.228-.302.457-.252.77-.152.313.102 1.985.937 2.326 1.107.34.17.568.255.652.397.082.14.082.81-.165 1.503z"/></svg>
+</a>
+
+<!-- SCROLL TO TOP -->
+<button class="totop" id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+// HERO SLIDER
+let current = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const dots   = document.querySelectorAll('.dot');
+function goSlide(n) {
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = n;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+}
+setInterval(() => goSlide((current + 1) % slides.length), 5000);
+
+// MOBILE MENU
+document.getElementById('ham').addEventListener('click', () => document.getElementById('mobMenu').classList.add('open'));
+document.getElementById('mobClose').addEventListener('click', closeMob);
+function closeMob() { document.getElementById('mobMenu').classList.remove('open'); }
+
+// PRODUCT TABS
+function showPanel(btn, id) {
+  document.querySelectorAll('.ptab').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+// SCROLL
+window.addEventListener('scroll', () => {
+  document.getElementById('totop').classList.toggle('show', scrollY > 500);
+});
+
+// REVEAL ON SCROLL
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('up'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.r').forEach(el => ro.observe(el));
+</script>
+</body>
+</html>
